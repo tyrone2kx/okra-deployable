@@ -7,7 +7,7 @@
 
 - Create a new instance of Okra and initialize it by passing valid configuration options.
 
-### `<script>
+### `
     const options = {
 	key: "1308hf301h83f1iweg0jhe",
 	env: "production",
@@ -17,10 +17,8 @@
 	charge: {
 		amount: 100000,
 		currency: "ngn"
-	}
-};
+        }
+    };
     const client = new Okra.create();
-    client.open(options)
-    
-</script>`
+    client.open(options)`
 
