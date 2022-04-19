@@ -1,0 +1,93 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scrollbar-width: thin;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace;
+}
+p {
+  margin: 2px;
+}
+.scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+.scrollbar::-webkit-scrollbar-track {
+  width: 5px;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  scrollbar-width: thin;
+  background: #edf1f2;
+  border-radius: 24px;
+}
+.scrollbar::-moz-scrollbar {
+  width: 5px;
+}
+.scrollbar::-moz-scrollbar-track {
+  width: 5px;
+}
+.scrollbar::-moz-scrollbar-thumb {
+  scrollbar-width: thin;
+  background: #edf1f2;
+  border-radius: 24px;
+}
+.primary-button {
+  width: 100%;
+  color: #fff;
+  cursor: pointer;
+  background: #333;
+  border: 0;
+  border-radius: 10px;
+  outline: 0;
+  padding: 10px;
+  transition: all 0.2s ease-in;
+}
+.primary-button:hover,
+.primary-button:disabled {
+  background: #666;
+}
+.search-input {
+  width: none;
+  width: 100%;
+  border: 0;
+  margin-left: 10px;
+}
+.search-input:focus {
+  border: 0 !important;
+  outline: 0 !important;
+}
+.search-input:active {
+  border: 0 !important;
+}
+.loader {
+  width: 30px;
+  height: 30px;
+  border: 16px solid #f3f3f3;
+  border-top-color: #000;
+  border-radius: 50%;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
